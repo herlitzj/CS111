@@ -24,9 +24,9 @@ int main() {
 		}
 
 		if (prime) {
-			cout << i << endl;	
+			cout << i << " ";	
 		}
 	}
-
+	cout << endl;
 	return 0;
 }

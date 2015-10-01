@@ -39,9 +39,9 @@ int main() {
 	if(squareInput < 0) {
 		cout << "Number is invalid." << endl;
 		return 0;
+	} else {
+		square(squareInput);
 	}
-
-	square(squareInput);	
 
 	cout << "Please enter an integer greater than 1000. ";
 	cin >> triangleInput;
@@ -49,10 +49,9 @@ int main() {
 	if(triangleInput < 1000) {
 		cout << "Number is invalid. " << endl;
 		return 0;
+	} else {
+		triangle(triangleInput);
 	}
-
-	triangle(triangleInput);
-
 
 	return 0;
 }

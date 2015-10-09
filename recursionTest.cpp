@@ -13,6 +13,17 @@ int doubleNum(int number) {
 	return number * 2;
 }
 
+int r(int n) {
+
+	if(n<100){
+		cout << "LAST ";
+		return 666;
+	} else {
+		cout << "INSIDE ";
+		return 10 * r(n/100) + n % 10;
+	}
+}
+
 int main() {
 
 	int num;
@@ -20,8 +31,8 @@ int main() {
 	cout << "Choose a number. ";
 	cin >> num;
 
-	cout << myFactorial(num) << endl;
-	cout << doubleNum(num) << endl;
-
+	//cout << myFactorial(num) << endl;
+	//cout << doubleNum(num) << endl;
+	cout << r(num);
 	return 0;
 }

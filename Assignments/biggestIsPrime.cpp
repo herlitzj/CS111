@@ -38,12 +38,18 @@ int main() {
 		cin >> inputNumber;
 	}
 
-	cout << biggestDigit(inputNumber) << endl;
-	cout << isPrime(inputNumber) << endl;
+	cout << "The biggest digit is: " << biggestDigit(inputNumber) << endl;
+	cout << "The number is prime: ";
+	if(isPrime(inputNumber)) cout << "True" << endl;
+	else cout << "False" << endl;
 
-	for(int i = 1; i <= 100; i++) {
-		if(isPrime(i)) cout << i << endl;
+	//cout << isPrime(inputNumber) << endl;
+	
+	cout << "The prime numbers from 0-100 are: " << endl;
+	for(int i = 0; i <= 100; i++) {
+		if(isPrime(i)) cout << i << " ";
 	}
-
+	
+	cout << endl;
 	return 0;
 }
